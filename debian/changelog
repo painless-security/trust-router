@@ -1,15 +1,13 @@
-moonshot-trust-router (3.4.1~3) unstable; urgency=medium
+moonshot-trust-router (3.4.1-0) unstable; urgency=medium
 
-  * Fix broken tr_tid shared library
+  * Fix broken libtr_tid shared library
+  * Link trust_router, tids, and tidc against libtr_tid
+  * Disentangle TID, TRP, and MON protocols in tr_msg.c and tr_filter.c
   * Handle missing monitoring section in internal configuration
-
- -- Jennifer Richards <jennifer@painless-security.com>  Thu, 14 Jun 2018 12:59:47 -0400
-
-moonshot-trust-router (3.4.1~2) unstable; urgency=medium
-
   * Fix pointer dereferencing error
   * Remove duplicated typedefs
   * Eliminate compiler warnings
+  * Update internal.cfg example configuration file
 
  -- Jennifer Richards <jennifer@painless-security.com>  Tue, 5 Jun 2018 12:39:08 -0400
 
